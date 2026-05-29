@@ -30,171 +30,84 @@
                     <span class="text-xl font-bold tracking-tight text-slate-900">AR<span class="text-emerald-600">quiler</span></span>
                 </div>
             </div>
-            
             <nav class="p-4 space-y-1">
-                <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-emerald-50 text-emerald-700 font-medium transition-colors group">
+                <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-emerald-50 text-emerald-700 font-medium transition-colors">
                     <i data-lucide="layout-dashboard" class="w-5 h-5 text-emerald-600"></i>
                     Dashboard
                 </a>
-                <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors group">
-                    <i data-lucide="building-2" class="w-5 h-5 text-slate-400 group-hover:text-slate-600"></i>
+                <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 hover:bg-slate-50 transition-colors">
+                    <i data-lucide="building-2" class="w-5 h-5 text-slate-400"></i>
                     Propiedades
                 </a>
-                <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors group">
-                    <i data-lucide="file-text" class="w-5 h-5 text-slate-400 group-hover:text-slate-600"></i>
+                <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 hover:bg-slate-50 transition-colors">
+                    <i data-lucide="file-text" class="w-5 h-5 text-slate-400"></i>
                     Contratos
                 </a>
-                <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors group">
-                    <i data-lucide="users" class="w-5 h-5 text-slate-400 group-hover:text-slate-600"></i>
-                    Inquilinos
-                </a>
-                <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors group">
-                    <i data-lucide="dollar-sign" class="w-5 h-5 text-slate-400 group-hover:text-slate-600"></i>
-                    Liquidaciones
-                </a>
-                <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors group">
-                    <i data-lucide="settings" class="w-5 h-5 text-slate-400 group-hover:text-slate-600"></i>
-                    Configuración
-                </a>
             </nav>
-        </div>
-
-        <div class="p-4 border-t border-slate-100">
-            <button class="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-rose-600 hover:bg-rose-50 transition-colors">
-                <i data-lucide="log-out" class="w-5 h-5"></i>
-                <span class="font-medium">Cerrar sesión</span>
-            </button>
         </div>
     </aside>
 
     <div id="sidebar-overlay" class="fixed inset-0 bg-slate-900/40 z-40 hidden lg:hidden"></div>
 
     <div class="flex-1 lg:pl-64 flex flex-col min-h-screen">
-        
         <header class="h-16 bg-white border-b border-slate-200 sticky top-0 z-30 px-4 lg:px-8 flex items-center justify-between">
             <div class="flex items-center gap-4 flex-1">
                 <button id="btn-toggle-sidebar" class="p-2 -ml-2 text-slate-600 hover:bg-slate-100 rounded-lg lg:hidden">
                     <i data-lucide="menu" class="w-6 h-6"></i>
                 </button>
-                <h1 class="text-xl font-semibold text-slate-900 hidden sm:block">Panel de Control</h1>
-                <div class="relative w-full max-w-md ml-0 sm:ml-4">
-                    <span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-slate-400">
-                        <i data-lucide="search" class="w-4 h-4"></i>
-                    </span>
-                    <input type="text" placeholder="Buscador global..." class="w-full pl-10 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all">
-                </div>
-            </div>
-
-            <div class="flex items-center gap-4">
-                <button class="relative p-2 text-slate-600 hover:bg-slate-100 rounded-xl transition-colors">
-                    <i data-lucide="bell" class="w-5 h-5"></i>
-                    <span class="absolute top-1.5 right-1.5 w-2 h-2 bg-emerald-600 rounded-full"></span>
-                </button>
-                <div class="h-8 w-px bg-slate-200"></div>
-                <div class="flex items-center gap-3 cursor-pointer group">
-                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Avatar" class="w-9 h-9 rounded-xl object-cover ring-2 ring-slate-100 group-hover:ring-emerald-100 transition-all">
-                    <div class="hidden md:block text-left">
-                        <p class="text-sm font-medium text-slate-900 group-hover:text-emerald-700 transition-colors">Carlos Mendoza</p>
-                        <p class="text-xs text-slate-500">Administrador</p>
-                    </div>
-                </div>
+                <h1 class="text-xl font-semibold text-slate-900">Panel de Control</h1>
             </div>
         </header>
 
         <main class="flex-1 p-4 lg:p-8 space-y-6 max-w-7xl w-full mx-auto">
-            
             <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                 <div>
-                    <h2 class="text-2xl font-bold text-slate-900">¡Hola de nuevo, Carlos!</h2>
-                    <p class="text-sm text-slate-500 mt-1">Este es el estado actual de tu portafolio inmobiliario hoy.</p>
+                    <h2 class="text-2xl font-bold text-slate-900">¡Hola de nuevo!</h2>
+                    <p class="text-sm text-slate-500 mt-1">Este es el estado actual de tu portafolio inmobiliario.</p>
                 </div>
-                <button class="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-sm px-4 py-2.5 rounded-xl shadow-sm shadow-emerald-600/10 transition-colors">
-                    <i data-lucide="plus" class="w-4 h-4"></i>
-                    Nueva Propiedad
-                </button>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex items-center justify-between">
                     <div>
-                        <p class="text-sm font-medium text-slate-500">Alquileres Activos</p>
+                        <p class="text-sm font-medium text-slate-500">Alquileres Activos (Real)</p>
                         <p id="kpi-activos" class="text-2xl font-bold text-slate-900 mt-2">...</p>
-                        <span class="inline-flex items-center gap-1 text-xs font-medium text-emerald-600 mt-2 bg-emerald-50 px-2 py-0.5 rounded-md">
-                            En tiempo real
-                        </span>
                     </div>
-                    <div class="p-3 bg-slate-50 rounded-xl text-slate-600 border border-slate-100">
+                    <div class="p-3 bg-slate-50 rounded-xl text-slate-600">
                         <i data-lucide="key" class="w-6 h-6"></i>
                     </div>
                 </div>
 
                 <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex items-center justify-between">
                     <div>
-                        <p class="text-sm font-medium text-slate-500">Recaudación Total</p>
+                        <p class="text-sm font-medium text-slate-500">Recaudación Total (Real)</p>
                         <p id="kpi-recaudacion" class="text-2xl font-bold text-slate-900 mt-2">...</p>
-                        <span class="inline-flex items-center gap-1 text-xs font-medium text-emerald-600 mt-2 bg-emerald-50 px-2 py-0.5 rounded-md">
-                            Suma de contratos
-                        </span>
                     </div>
-                    <div class="p-3 bg-emerald-50 rounded-xl text-emerald-600 border border-emerald-100/30">
+                    <div class="p-3 bg-emerald-50 rounded-xl text-emerald-600">
                         <i data-lucide="dollar-sign" class="w-6 h-6"></i>
-                    </div>
-                </div>
-
-                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex items-center justify-between">
-                    <div>
-                        <p class="text-sm font-medium text-slate-500">Por Vencer / Actualizar</p>
-                        <p class="text-2xl font-bold text-amber-600 mt-2">5</p>
-                        <span class="inline-flex items-center text-xs font-medium text-amber-700 mt-2 bg-amber-50 px-2 py-0.5 rounded-md">
-                            Próximos 30 días
-                        </span>
-                    </div>
-                    <div class="p-3 bg-amber-50 rounded-xl text-amber-600 border border-amber-100/30">
-                        <i data-lucide="alert-triangle" class="w-6 h-6"></i>
-                    </div>
-                </div>
-
-                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex items-center justify-between">
-                    <div>
-                        <p class="text-sm font-medium text-slate-500">Tasa de Ocupación</p>
-                        <p class="text-2xl font-bold text-slate-900 mt-2">95.2%</p>
-                        <div class="w-28 bg-slate-100 h-2 rounded-full mt-3 overflow-hidden">
-                            <div class="bg-emerald-600 h-full rounded-full" style="width: 95.2%"></div>
-                        </div>
-                    </div>
-                    <div class="p-3 bg-slate-50 rounded-xl text-slate-600 border border-slate-100">
-                        <i data-lucide="percent" class="w-6 h-6"></i>
                     </div>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
-                
                 <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden lg:col-span-2">
-                    <div class="p-6 border-b border-slate-100">
-                        <div class="flex items-center gap-2">
-                            <div class="p-1.5 bg-emerald-50 rounded-lg text-emerald-600">
-                                <i data-lucide="clipboard-list" class="w-4 h-4"></i>
-                            </div>
-                            <h3 class="font-semibold text-slate-900">Contratos Reales desde Supabase</h3>
-                        </div>
+                    <div class="p-6 border-b border-slate-100 font-semibold text-slate-900">
+                        Contratos Reales desde Supabase
                     </div>
-
                     <div class="overflow-x-auto">
                         <table class="w-full text-left border-collapse">
                             <thead>
-                                <tr class="bg-slate-50/70 border-b border-slate-100 text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                                <tr class="bg-slate-50/70 border-b border-slate-100 text-xs font-semibold text-slate-500 uppercase">
                                     <th class="px-6 py-4">Propiedad</th>
                                     <th class="px-6 py-4">Inquilino</th>
                                     <th class="px-6 py-4">Índice</th>
-                                    <th class="px-6 py-4">Próx. Monto</th>
+                                    <th class="px-6 py-4">Monto</th>
                                     <th class="px-6 py-4">Actualización</th>
-                                    <th class="px-6 py-4 text-center">Acción</th>
                                 </tr>
                             </thead>
                             <tbody id="tabla-contratos-body" class="divide-y divide-slate-100 text-sm">
                                 <tr>
-                                    <td colspan="6" class="text-center py-8 text-slate-400">Cargando datos desde el servidor...</td>
+                                    <td colspan="5" class="text-center py-8 text-slate-400">Esperando conexión...</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -202,141 +115,97 @@
                 </div>
 
                 <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm lg:col-span-1">
-                    <div class="flex items-center gap-2 mb-4">
-                        <div class="p-1.5 bg-emerald-50 rounded-lg text-emerald-600">
-                            <i data-lucide="calculator" class="w-4 h-4"></i>
-                        </div>
-                        <h3 class="font-semibold text-slate-900">Calculadora de Actualización</h3>
-                    </div>
-                    <p class="text-xs text-slate-500 mb-5">Simula de forma ágil la indexación de tus contratos en tiempo real.</p>
-                    
+                    <h3 class="font-semibold text-slate-900 mb-4">Calculadora Rápida</h3>
                     <div class="space-y-4">
                         <div>
                             <label class="block text-xs font-medium text-slate-500 mb-1">Monto Inicial ($)</label>
-                            <input type="number" id="sim-monto" value="300000" class="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500">
+                            <input type="number" id="sim-monto" value="300000" class="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-sm">
                         </div>
-
                         <div>
-                            <label class="block text-xs font-medium text-slate-500 mb-1">Índice Contractual</label>
-                            <select id="sim-indice" class="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500">
-                                <option value="icl">ICL (Índice Contratos de Locación)</option>
-                                <option value="ipc">IPC (Índice Precios al Consumidor)</option>
+                            <label class="block text-xs font-medium text-slate-500 mb-1">Índice</label>
+                            <select id="sim-indice" class="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-sm">
+                                <option value="icl">ICL</option>
+                                <option value="ipc">IPC</option>
                             </select>
                         </div>
-
-                        <div>
-                            <label class="block text-xs font-medium text-slate-500 mb-1">Próxima Fecha de Ajuste</label>
-                            <input type="date" value="2026-06-01" class="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500">
-                        </div>
-                    </div>
-
-                    <div class="mt-6 pt-5 border-t border-slate-100">
-                        <div class="bg-slate-50 p-4 rounded-xl flex items-center justify-between">
-                            <div>
-                                <span class="text-[10px] text-slate-400 font-bold uppercase tracking-wider block">Indexación</span>
-                                <span id="sim-txt-factor" class="text-xs text-slate-600 font-medium">Factor: +42.5%</span>
-                            </div>
-                            <div class="text-right">
-                                <span class="text-[10px] text-slate-400 font-bold uppercase tracking-wider block">Monto Ajustado</span>
-                                <span id="sim-resultado" class="text-lg font-bold text-emerald-600 block">$427,500</span>
-                            </div>
+                        <div class="bg-slate-50 p-4 rounded-xl mt-4 flex justify-between items-center">
+                            <span id="sim-txt-factor" class="text-xs text-slate-500">Factor: +42.5%</span>
+                            <span id="sim-resultado" class="text-lg font-bold text-emerald-600">$427,500</span>
                         </div>
                     </div>
                 </div>
-
             </div>
         </main>
     </div>
 
     <script>
-        // REEMPLAZA ESTOS DOS VALORES CON LOS DE TU PANEL DE SUPABASE (Settings -> API)
-// 1. Tus credenciales de conexión
-        const SUPABASE_URL = "https://TU_PROYECTO.supabase.co";
-        const SUPABASE_ANON_KEY = "TU_CLAVE_ANON_PUBLIC";
+        // ¡REEMPLAZA ESTOS DOS VALORES CON LAS CREDENCIALES DE TU SUPABASE!
+        const SUPABASE_URL = "https://pylpvcuekriqgtrqizos.supabase.co";
+        const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB5bHB2Y3Vla3JpcWd0cnFpem9zIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAwNTc0NzMsImV4cCI6MjA5NTYzMzQ3M30.ijTaYaswImAGncjchF7yJafxF86KTKIQ-c6tV00I1KQ";
 
-        // 2. Inicialización corregida usando el objeto global de la CDN
-        const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-
-        // Renderizar los iconos vectoriales de Lucide
+        // Inicializar iconos y alerta de prueba
         lucide.createIcons();
+        alert("¡El JavaScript se está ejecutando correctamente!");
 
-        // Función para consultar la base de datos y pintar el Dashboard
+        // Intentar conectar con Supabase
+        let supabase;
+        try {
+            supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+        } catch(e) {
+            console.error("Error al crear el cliente:", e);
+        }
+
         async function cargarDashboardDinamico() {
             const tbody = document.getElementById('tabla-contratos-body');
             
             try {
-                // Hacer la consulta real a la tabla 'contratos'
                 let { data: contratos, error } = await supabase
                     .from('contratos')
                     .select('*');
 
                 if (error) throw error;
 
-                // Si no hay datos cargados en Supabase
                 if (!contratos || contratos.length === 0) {
-                    tbody.innerHTML = `<tr><td colspan="6" class="text-center py-8 text-slate-400">No hay contratos registrados. ¡Carga uno en Supabase!</td></tr>`;
+                    tbody.innerHTML = `<tr><td colspan="5" class="text-center py-8 text-slate-400">Conectado a Supabase, pero la tabla 'contratos' está vacía.</td></tr>`;
                     document.getElementById('kpi-activos').textContent = "0";
                     document.getElementById('kpi-recaudacion').textContent = "$0";
                     return;
                 }
 
-                // 1. Calcular KPIs Dinámicos basados en tus registros reales
-                const totalActivos = contratos.length;
-                const sumaRecaudacion = contratos.reduce((total, con) => total + (parseFloat(con.monto) || 0), 0);
-
-                // Imprimir los KPIs
-                document.getElementById('kpi-activos').textContent = totalActivos;
+                // Calcular KPIs
+                document.getElementById('kpi-activos').textContent = contratos.length;
+                const suma = contratos.reduce((t, c) => t + (parseFloat(c.monto) || 0), 0);
                 document.getElementById('kpi-recaudacion').textContent = new Intl.NumberFormat('es-AR', {
                     style: 'currency', currency: 'ARS', minimumFractionDigits: 0
-                }).format(sumaRecaudacion);
+                }).format(suma);
 
-                // 2. Limpiar e inyectar las filas en la tabla del HTML
+                // Dibujar tabla
                 tbody.innerHTML = "";
                 contratos.forEach(contrato => {
-                    // Formatear dinero y fecha de forma limpia
-                    const montoFormateado = new Intl.NumberFormat('es-AR', {
-                        style: 'currency', currency: 'ARS', minimumFractionDigits: 0
-                    }).format(contrato.monto);
-
-                    const fecha = new Date(contrato.fecha_actualizacion + "T00:00:00");
-                    const fechaFormateada = fecha.toLocaleDateString('es-AR', { day: '2-digit', month: 'short', year: 'numeric' });
-
-                    // Elegir color de etiqueta según el índice (ICL azul, IPC púrpura)
-                    const badgeClass = contrato.indice.toUpperCase() === 'ICL' 
-                        ? 'bg-blue-50 text-blue-700 border-blue-100' 
-                        : 'bg-purple-50 text-purple-700 border-purple-100';
-
-                    // Crear el HTML de la fila
-                    const filaHtml = `
-                        <tr class="hover:bg-slate-50/40 transition-colors">
-                            <td class="px-6 py-4">
-                                <p class="font-medium text-slate-900">${contrato.propiedad}</p>
-                            </td>
-                            <td class="px-6 py-4 text-slate-700">${contrato.inquilino}</td>
-                            <td class="px-6 py-4">
-                                <span class="inline-flex text-xs px-2 py-0.5 rounded-md border font-medium ${badgeClass}">${contrato.indice.toUpperCase()}</span>
-                            </td>
+                    const montoFormateado = new Intl.NumberFormat('es-AR', { style: 'currency', currency: 'ARS', minimumFractionDigits: 0 }).format(contrato.monto);
+                    tbody.innerHTML += `
+                        <tr class="hover:bg-slate-50/40">
+                            <td class="px-6 py-4 font-medium text-slate-900">${contrato.propiedad || 'Sin dirección'}</td>
+                            <td class="px-6 py-4 text-slate-700">${contrato.inquilino || 'Sin nombre'}</td>
+                            <td class="px-6 py-4"><span class="px-2 py-0.5 rounded bg-slate-100 font-medium">${(contrato.indice || 'ICL').toUpperCase()}</span></td>
                             <td class="px-6 py-4 font-semibold text-slate-900">${montoFormateado}</td>
-                            <td class="px-6 py-4 text-slate-600 font-medium">${fechaFormateada}</td>
-                            <td class="px-6 py-4 text-center">
-                                <button class="text-xs font-semibold text-emerald-600 bg-emerald-50 hover:bg-emerald-100 px-3 py-1.5 rounded-lg transition-colors">Ver Detalle</button>
-                            </td>
+                            <td class="px-6 py-4 text-slate-600">${contrato.fecha_actualizacion || '-'}</td>
                         </tr>
                     `;
-                    tbody.innerHTML += filaHtml;
                 });
 
             } catch (err) {
-                console.error("Error cargando Supabase:", err);
-                tbody.innerHTML = `<tr><td colspan="6" class="text-center py-8 text-rose-600 font-medium">Error de conexión con las credenciales de Supabase.</td></tr>`;
+                console.error("Error de Supabase:", err);
+                tbody.innerHTML = `<tr><td colspan="5" class="text-center py-8 text-rose-600 font-medium">Error de conexión: Revisa tus claves de Supabase.</td></tr>`;
             }
         }
 
-        // Ejecutar la carga apenas abre la web
-        cargarDashboardDinamico();
+        // Ejecutar si el cliente se creó bien
+        if(supabase) {
+            cargarDashboardDinamico();
+        }
 
-        // Lógica Interactiva de la Calculadora de Indexación (Frontend local)
+        // Calculadora local
         const simMonto = document.getElementById('sim-monto');
         const simIndice = document.getElementById('sim-indice');
         const simTxtFactor = document.getElementById('sim-txt-factor');
@@ -344,29 +213,13 @@ const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
         function ejecutarSimulacion() {
             const montoOriginal = parseFloat(simMonto.value) || 0;
-            const tipoIndice = simIndice.value;
-            let tasaAumento = tipoIndice === 'icl' ? 42.5 : 48.2; 
+            let tasaAumento = simIndice.value === 'icl' ? 42.5 : 48.2; 
             const montoFinal = montoOriginal * (1 + (tasaAumento / 100));
-
             simTxtFactor.textContent = `Factor: +${tasaAumento}%`;
-            simResultado.textContent = new Intl.NumberFormat('es-AR', {
-                style: 'currency', currency: 'ARS', minimumFractionDigits: 0
-            }).format(montoFinal);
+            simResultado.textContent = new Intl.NumberFormat('es-AR', { style: 'currency', currency: 'ARS', minimumFractionDigits: 0 }).format(montoFinal);
         }
         simMonto.addEventListener('input', ejecutarSimulacion);
         simIndice.addEventListener('change', ejecutarSimulacion);
-
-        // Lógica del Sidebar móvil
-        const btnToggleSidebar = document.getElementById('btn-toggle-sidebar');
-        const sidebar = document.getElementById('sidebar');
-        const overlay = document.getElementById('sidebar-overlay');
-
-        function toggleMenu() {
-            sidebar.classList.toggle('-translate-x-full');
-            overlay.classList.toggle('hidden');
-        }
-        btnToggleSidebar.addEventListener('click', toggleMenu);
-        overlay.addEventListener('click', toggleMenu);
     </script>
 </body>
 </html>
