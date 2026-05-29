@@ -148,13 +148,8 @@
         alert("¡El JavaScript se está ejecutando correctamente!");
 
         // Intentar conectar con Supabase
-        let supabase;
-        try {
-            supabase_ = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-        } catch(e) {
-            console.error("Error al crear el cliente:", e);
-        }
-
+        const { createClient } = window.supabase;
+        const supabase_ = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
         async function cargarDashboardDinamico() {
             const tbody = document.getElementById('tabla-contratos-body');
             
