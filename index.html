@@ -162,7 +162,7 @@
                 let { data: contratos, error } = await supabase_
                     .from('contratos')
                     .select('*');
-
+alert("Contratos recibidos: " + JSON.stringify(contratos) + " | Error: " + JSON.stringify(error));
                 if (error) throw error;
 
                 if (!contratos || contratos.length === 0) {
