@@ -250,11 +250,11 @@
 
     <script>
         // REEMPLAZA ESTOS DOS VALORES CON LOS DE TU PANEL DE SUPABASE (Settings -> API)
-        const SUPABASE_URL = "https://pylpvcuekriqgtrqizos.supabase.co/rest/v1/";
-        const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB5bHB2Y3Vla3JpcWd0cnFpem9zIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAwNTc0NzMsImV4cCI6MjA5NTYzMzQ3M30.ijTaYaswImAGncjchF7yJafxF86KTKIQ-c6tV00I1KQ";
+const SUPABASE_URL = "https://pylpvcuekriqgtrqizos.supabase.co/rest/v1/";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB5bHB2Y3Vla3JpcWd0cnFpem9zIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAwNTc0NzMsImV4cCI6MjA5NTYzMzQ3M30.ijTaYaswImAGncjchF7yJafxF86KTKIQ-c6tV00I1KQ";
 
-        // Inicializar el cliente oficial de Supabase
-        const supabase = @supabase/supabase-js.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+// Inicializar el cliente oficial de Supabase
+const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
         // Renderizar los iconos vectoriales de Lucide
         lucide.createIcons();
